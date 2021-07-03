@@ -1,7 +1,7 @@
 import json
 
 def get_products():
-    f = open('products.json')
-    products  = json.load(f)
-    f.close()
-    return products
+    with open('./products.json','r') as jsonfile:
+        file_data = json.loads(jsonfile.read())
+
+    return file_data

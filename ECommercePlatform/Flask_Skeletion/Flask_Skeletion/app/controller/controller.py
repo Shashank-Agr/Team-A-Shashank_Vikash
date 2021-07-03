@@ -22,7 +22,7 @@ def health_check():
 @uri.route("/products", methods = ["GET"])
 def fetch_product():
     product_list = get_products()
-    res = []
+    res = dict()
     if(len(product_list)!=0):
         res['message'] = "All Business Products Retrieved"
         res['product_list'] = product_list
@@ -35,10 +35,10 @@ def fetch_product():
     
 # Task 2: Retrieve details of a specific product based on product_id​
 
-@uri.route("/products/<int:id>", methods = ["GET"])
+@uri.route("/products/<id>", methods = ["GET"])
 def fetch_product_by_ID(id):
     product = get_product_by_id(id)
-    res = []
+    res = dict()
     if(len(product)!=0):
         res['message'] = "Product Found!"
         res['product_list'] = product
