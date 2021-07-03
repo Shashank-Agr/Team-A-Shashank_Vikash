@@ -38,7 +38,7 @@ def fetch_product():
     
 # Task 2: Retrieve details of a specific product based on product_id​
 
-@uri.route("/products/<str:id>", methods = ["GET"])
+@uri.route("/products/<id>", methods = ["GET"])
 def fetch_product_by_ID(id):
     product = get_product_by_id(id)
     res = dict()
