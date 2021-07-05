@@ -31,3 +31,7 @@ Create a small rest service, using Flask Api for the following actions:
   - iterate through the items of the cart
   - added the price per item to total
   - returned the total price
+
+Future work:
+1) cart functionality using database
+2) website for better visualization
