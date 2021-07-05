@@ -35,3 +35,5 @@ Create a small rest service, using Flask Api for the following actions:
 Future work:
 1) cart functionality using database
 2) website for better visualization
+3) User Authentication
+4) Multiple cart for multiple users
