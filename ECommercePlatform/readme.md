@@ -37,3 +37,5 @@ Future work:
 2) website for better visualization
 3) User Authentication
 4) Multiple cart for multiple users
+5) Unit testing
+6) Business Logic
