@@ -1,6 +1,4 @@
-from flask import Flask, Blueprint, jsonify, request, json, render_template, url_for, request, redirect, current_app
-import flask
-from datetime import datetime
+from flask import Blueprint, jsonify
 
 from ..services.product_list import *
 from ..services.product_by_ID import *
